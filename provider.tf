@@ -2,18 +2,16 @@
 
 provider "aws" {
   region  = "us-east-1"
-  # profile = "panda" # tylko gdy istnieje taki --profile w ~/.aws/credentials
-}
+  }
 
 # terraform
 
 terraform {
   backend "s3" {
-    # bucket = "<name>-<surname>-panda-devops-core-8"
-    bucket = "testingpandabucket2"
+    bucket = "slawomir-skarba-panda-devops-core-17"
     key = "infra/terraform.state"
     region = "us-east-1"
-  }
+    }
   required_providers {
     aws = {
       source = "hashicorp/aws"

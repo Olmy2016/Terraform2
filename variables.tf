@@ -13,6 +13,4 @@ variable "ssh_key_path" {
   description = "Sciezka do klucza SSH"
 }
 
-variable "bucket_name" {
-  # default = "<name>-<surname>-panda-devops-core-8"
-}
+variable "bucket_name" {}
